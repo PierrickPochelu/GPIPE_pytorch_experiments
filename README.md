@@ -3,9 +3,10 @@ Original paper of GPIPE URL: https://arxiv.org/abs/1811.06965
 
 The deep learning methods require multiple experiments to be well-tuned. And more, the most computing-intensive deep learning models (ensembles or big neural networks) produce generally better predictions. To overcome this computation requirement, optimizing the hardware utilization is strategic for machine learning applications.
 
-In this repo, I evaluate some of theme.
+In this repo, I evaluate them.
 
-## Different methods are compared
+## Different methods compared
+Hardware: Tesla GPUs in a DGX computing server.
 
 * Sequential training one image at a time with accumulation of gradient to simulate bigger batch size.
 * LMS (Large Model Support). It implement DNNs computing on the GPU and the DNN parameters stored on the CPU with asynchronous marshaling of parameters between the GPU memory and the main memory.
